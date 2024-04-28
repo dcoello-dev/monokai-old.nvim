@@ -168,6 +168,7 @@ M.load_syntax = function(palette)
     },
     Cursor = {
       style = 'reverse',
+      fg = palette.purple,
     },
     ColorColumn = {
       bg = palette.base3,
@@ -222,7 +223,7 @@ M.load_syntax = function(palette)
       fg = palette.brown,
     },
     LineNr = {
-      fg = palette.base5,
+      fg = palette.white,
       bg = palette.base2,
     },
     SignColumn = {
@@ -315,10 +316,16 @@ M.load_syntax = function(palette)
     Type = {
       fg = palette.aqua,
     },
+    Function = {
+      bg = palette.green,
+      fg = palette.black,
+    },
     Structure = {
+      bg = palette.base2,
       fg = palette.aqua,
     },
     StorageClass = {
+      bg = palette.base2,
       fg = palette.aqua,
     },
     Typedef = {
@@ -326,10 +333,6 @@ M.load_syntax = function(palette)
     },
     Identifier = {
       fg = palette.white,
-    },
-    Function = {
-      fg = palette.green,
-      style = 'italic',
     },
     Statement = {
       fg = palette.pink,
@@ -341,15 +344,15 @@ M.load_syntax = function(palette)
       fg = palette.pink,
     },
     Keyword = {
-      fg = palette.pink,
-      style = 'italic',
+      bg = palette.pink,
+      fg = palette.black,
     },
     PreProc = {
       fg = palette.green,
     },
     Include = {
-      fg = palette.aqua,
-      style = 'italic',
+      bg = palette.aqua,
+      fg = palette.black,
     },
     Define = {
       fg = palette.pink,
@@ -370,8 +373,8 @@ M.load_syntax = function(palette)
       fg = palette.white,
     },
     SpecialComment = {
-      fg = palette.grey,
-      style = 'italic',
+      bg = palette.grey,
+      fg = palette.black,
     },
     Tag = {
       fg = palette.orange,
@@ -380,8 +383,8 @@ M.load_syntax = function(palette)
       fg = palette.orange,
     },
     Comment = {
-      fg = palette.base6,
-      style = 'italic',
+      bg = palette.base6,
+      fg = palette.black,
     },
     Underlined = {
       style = 'underline',
@@ -476,8 +479,8 @@ M.load_plugin_syntax = function(palette)
       fg = palette.purple,
     },
     ["@comment"] = {
-      fg = palette.base6,
-      style = 'italic',
+      bg = palette.base6,
+      fg = palette.black,
     },
     ["@conceal"] = {
       fg = palette.grey,
@@ -558,8 +561,8 @@ M.load_plugin_syntax = function(palette)
       fg = palette.purple,
     },
     ["@function"] = {
-      fg = palette.green,
-      style = 'italic',
+      bg = palette.green,
+      fg = palette.black,
     },
     ["@function.builtin"] = {
       fg = palette.aqua,
@@ -568,20 +571,20 @@ M.load_plugin_syntax = function(palette)
       fg = palette.white,
     },
     ["@function.macro"] = {
-      fg = palette.green,
-      style = 'italic',
+      bg = palette.green,
+      fg = palette.black,
     },
     ["@include"] = {
-      fg = palette.aqua,
-      style = 'italic',
+      bg = palette.aqua,
+      fg = palette.black,
     },
     ["@keyword"] = {
-      fg = palette.pink,
-      style = 'italic',
+      bg = palette.pink,
+      fg = palette.black,
     },
     ["@keyword.function"] = {
-      fg = palette.aqua,
-      style = 'italic',
+      bg = palette.aqua,
+      fg = palette.black,
     },
     ["@keyword.operator"] = {
       fg = palette.pink,
@@ -641,10 +644,10 @@ M.load_plugin_syntax = function(palette)
     },
     -- ["@spell"] = {},
     ["@storageclass"] = {
-      fg = palette.aqua,
+      fg = palette.orange,
     },
     ["@storageclass.lifetime"] = {
-      fg = palette.aqua,
+      fg = palette.orange,
     },
     ["@strike"] = strike_group,
     ["@string"] = {
@@ -705,8 +708,8 @@ M.load_plugin_syntax = function(palette)
       fg = palette.grey,
     },
     ["@text.reference"] = {
-      fg = palette.orange,
-      style = 'italic',
+      bg = palette.orange,
+      fg = palette.black,
     },
     ["@text.strike"] = strike_group,
     ["@text.strong"] = {
